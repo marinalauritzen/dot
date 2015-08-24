@@ -1,0 +1,76 @@
+# My ~/.gitconfig file
+# (with personal information removed)
+# Take what you will!
+[core]
+	quotepath = false
+	editor = subl -w
+	excludesfile = /Users/walter/.gitignore_global
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+
+[help]
+	autocorrect = 1
+
+[mergetool]
+	keepBackup = true
+
+[rerere]
+	enabled = true
+
+[push]
+	default = simple
+
+[alias]
+	cl = clone
+	co = commit
+	com = commit
+	# add and commit with message
+	coam = commit -am
+	# amend a previous commit
+	amend = commit --amend
+	pr = pull --rebase
+	ch = checkout
+	st = status
+	br = branch
+	# add in patch-mode (interactive)
+	ap = add -p
+	# undo the last commit
+	undo = reset --soft HEAD~1
+	# new branch
+	nbr = checkout -b
+	# try out a merge
+	drymerge = merge --no-commit --no-ff
+	# wipe away chnges to tracked files
+	clear = !git stash && git stash drop
+
+	# some tasty logging graphs
+	# I tend to use lg and lg4
+	lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+	lg2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit
+	lg3 = !git log --graph --oneline --all --decorate `git reflog | cut -c1-7`
+	lg4 = !git log --graph --oneline --decorate
+	lg = !git lg1
+
+	# diff of what happend in the last day
+	todiff = !git diff $(git rev-list -n1 --before=\"1 day ago\" ${1:-master})
+	# summary of changes today
+	today = !git diff $(git rev-list -n1 --before=\"1 day ago\" ${1:-master}) --shortstat
+	# try out a merge
+	drymerge = merge --no-commit --no-ff
+
+	# Stage me. Requires you have my easy-staging script.
+	# https://gist.github.com/phuu/5704768
+	stageme = !gitstage
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Walter Carvalho
+	email = waltervascarvalho@gmail.com

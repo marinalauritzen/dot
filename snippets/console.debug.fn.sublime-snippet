@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+console.debug('${1:value}() ====='); // TODO: Remove this comment.
+]]></content>
+  <tabTrigger>cdf</tabTrigger>
+  <scope>source.js</scope>
+  <description>Logs a given value as 'debug' string. Marker.</description>
+</snippet>

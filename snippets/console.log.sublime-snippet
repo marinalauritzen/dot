@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+console.log('${1:thing}: ', ${1:thing}); // TODO: Remove this comment.
+]]></content>
+  <tabTrigger>cl</tabTrigger>
+  <scope>source.js</scope>
+  <description>Logs a given value.</description>
+</snippet>
