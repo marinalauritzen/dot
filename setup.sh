@@ -1,32 +1,31 @@
 #!/bin/bash
+date >> dotlog
 
-files=(".gitconfig" ".zshrc")
+files=(
+    "config/.gitconfig"
+    "config/.zshrc"
+)
 
-function complete {
+function perform {
+    echo -ne "\t\t • $1"
+    eval $2 >> dotlog
     echo -e " ✔\\r"
-}
-
-function install {
-    echo -ne "\t\t$1"
-    eval $2 > dotlog
-    complete
 }
 
 echo "Running setup..."
 
-echo -e "\tInstalling:"
-install testInstall "npm --version"
-# install homebrew "ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)""
-# install nvm "curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash"
-# install rbenv "brew update && brew install rbenv ruby-build"
+echo -e "\t• Installing:"
+# perform homebrew "ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)""
+# perform nvm "curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash"
+# perform rbenv "brew update && brew install rbenv ruby-build"
 
 # symlink dot files
-echo -e "\tLinking:"
+echo -e "\t• Linking:"
 for f in "${!files[@]}"
-do
- echo -ne "\t\t${files["$f"]}"
- # link files
- complete
-done
+    do
+        perform "${files["$f"]}" "echo ${files["$f"]}" # link files
+    done
 
+# clean
 echo "Setup complete."
+exit
