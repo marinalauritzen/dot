@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
-console.debug(`${1:val}:`, ${1:val}); // TODO: Remove this comment.
+debugger; // FIXME: remove this statement
 ]]></content>
-  <tabTrigger>cd</tabTrigger>
+  <tabTrigger>deb</tabTrigger>
   <scope>source.js</scope>
   <description>Logs a given value as 'debug'.</description>
 </snippet>

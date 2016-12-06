@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 /**
- * ${1:title}
+ * ${1:heading}
  *
  * ${2:description}
  */

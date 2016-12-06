@@ -1,0 +1,38 @@
+<snippet>
+    <content><![CDATA[
+import angular from 'angular';
+
+import template from './${1:template}.template.html'; // TODO: create template
+import {${2:controller}ControllerModule} from './.controller'; // TODO: create controller
+import {${3:stateName}} from 'routes.constant.js'; // TODO: add state name to routes.constant.js
+
+export const ${4:routeName}RouteModule = angular
+  .module('${4:routeName}RouteModule', [
+    'ui.router',
+    ${2:module}ControllerModule.name,
+  ])
+  .config([
+    '\$stateProvider',
+    function ${4:routeName}Route(\$stateProvider) {
+      \$stateProvider.state(${3:stateName}, {
+        url: '${5:url}',
+        params: {
+          limit: {
+            value: '25',
+            squash: true,
+          },
+        },
+        template,
+        controller: '${2:controller}Controller',
+        controllerAs: 'ctrl',
+        resolve: {
+          // TODO: add resolves
+        },
+      });
+    },
+  ]);
+]]></content>
+    <tabTrigger>gcr</tabTrigger>
+    <scope>source.js</scope>
+    <description>Template for a route</description>
+</snippet>

@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+import angular from 'angular';
+import _ from 'lodash';
+
+export const ${1:controllerName}ControllerModule = angular
+  .module('${1:controllerName}ControllerModule', [])
+  .controller('${2:ControllerModuleName}Controller', [
+    '\$state',
+    '\$stateParams',
+    function ${2:ControllerModuleName}Controller(
+      \$state,
+      \$stateParams,
+    ) {
+      console.debug('${2:ControllerModuleName}Controller');
+      console.debug('\$state, \$stateParams: ', \$state, \$stateParams); // TODO: Remove this comment.
+      const ctrl = this;
+
+      _.extend(ctrl, {
+
+      });
+    },
+  ]);
+]]></content>
+    <tabTrigger>gcc</tabTrigger>
+    <scope>source.js</scope>
+    <description>Template for a controller</description>
+</snippet>
+
+
+

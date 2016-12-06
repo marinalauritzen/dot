@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+console.time('${1:tracker}'); // TODO: Remove this tracker
+console.timeEnd('${1:tracker}'); // TODO: Remove this tracker
+]]></content>
+  <tabTrigger>clt</tabTrigger>
+  <scope>source.js</scope>
+  <description>Logs a given value as 'debug'.</description>
+</snippet>
