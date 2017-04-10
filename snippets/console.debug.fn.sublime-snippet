@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-console.debug('${1:value}() ====='); // TODO: Remove this comment.
+console.debug(`${1:value}() =====`); /* TODO: Remove this comment */
 ]]></content>
   <tabTrigger>cdf</tabTrigger>
   <scope>source.js</scope>

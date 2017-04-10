@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-console.log(`${1:val}:`, ${1:val}); // TODO: Remove this comment.
+console.log(`${1:val}:`, ${1:val}); /* TODO: Remove this comment */
 ]]></content>
   <tabTrigger>cl</tabTrigger>
   <scope>source.js</scope>

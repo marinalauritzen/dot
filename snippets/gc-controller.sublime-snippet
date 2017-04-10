@@ -13,7 +13,7 @@ export const ${1:controllerName}ControllerModule = angular
       \$stateParams,
     ) {
       console.debug('${2:ControllerModuleName}Controller');
-      console.debug('\$state, \$stateParams: ', \$state, \$stateParams); // TODO: Remove this comment.
+      console.debug('\$state, \$stateParams: ', \$state, \$stateParams); /* TODO: Remove this comment */
       const ctrl = this;
 
       _.extend(ctrl, {

@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-console.log('${1:value}() ====='); // TODO: Remove this comment.
+console.log(`${1:value}() =====`); /* TODO: Remove this comment */
 ]]></content>
   <tabTrigger>clf</tabTrigger>
   <scope>source.js</scope>

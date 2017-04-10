@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-debugger; // FIXME: remove this statement
+debugger; /* FIXME: remove this statement */
 ]]></content>
   <tabTrigger>deb</tabTrigger>
   <scope>source.js</scope>
