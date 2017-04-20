@@ -1,9 +1,8 @@
 <snippet>
   <content><![CDATA[
-/**
-  * ${1:heading}
+/** ${1:NOTE}: ${2:heading}
   *
-  * ${2:description}
+  * ${3:description}
   */
 ]]></content>
   <tabTrigger>/*</tabTrigger>
