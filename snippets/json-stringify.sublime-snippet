@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-JSON.stringify(${1:value}, null, 4);
+JSON.stringify(${1:value}, null, 4)
 ]]></content>
   <tabTrigger>jstr</tabTrigger>
   <scope>source.js</scope>

@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+<label className="label${3: required}" htmlFor={ `${1:field_name}` }>
+  ${2:Field}
+</label>
+
+<Field
+className="input"
+name={ `${1:field_name}` }
+id={ `${1:field_name}` }
+${4:component={ fn \}}
+${5:component="input"}
+placeholder={ `${2:Field}` }
+/>
+
+<Field
+name={ `${1:field_name}` }
+${6:component={ fn \}}
+${7:component="input"}
+validate={
+  ${8:fn}
+}
+/>
+]]></content>
+  <tabTrigger>field</tabTrigger>
+  <scope>source.js</scope>
+  <description>Create fields with label and error</description>
+</snippet>
