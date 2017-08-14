@@ -74,3 +74,8 @@
 [user]
 	name = Walter Carvalho
 	email = waltervascarvalho@gmail.com
+	signingkey = 574DAB400CEFB31B
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
