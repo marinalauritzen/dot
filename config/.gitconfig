@@ -32,6 +32,14 @@
 	coam = commit -am
 	# amend a previous commit
 	amend = commit --amend
+	# ammend no edit
+	ane = commit --amend --no-edit
+	ri = rebase -i
+	rc = rebase --continue
+	ra = rebase --abort
+	cp = cherry-pick
+	cpc = cherry-pick --continue
+	cpa = cherry-pick --abort
 	pr = pull --rebase
 	ch = checkout
 	st = status

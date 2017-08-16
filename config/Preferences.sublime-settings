@@ -16,6 +16,7 @@
 		"smartling",
 		""
 	],
+	"always_show_minimap_viewport": false,
 	"binary_file_patterns":
 	[
 		"dist/",
@@ -40,6 +41,7 @@
 	"color_scheme": "Packages/User/SublimeLinter/Sublime Snazzy (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"drag_text": false,
+	"draw_minimap_border": false,
 	"enable_tab_scrolling": true,
 	"file_exclude_patterns":
 	[
@@ -55,7 +57,7 @@
 		".tmp",
 		".git"
 	],
-	"font_face": "Menlo",
+	"font_face": "DejaVu Sans Mono",
 	"font_options":
 	[
 		"no_round"
@@ -80,8 +82,11 @@
 	"scroll_speed": 5.0,
 	"show_full_path": false,
 	"sidebar_default": true,
-	"theme": "predawn.sublime-theme",
+	"theme": "Boxy Tomorrow.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false
+	"word_wrap": false,
+	"terminal": "iTerm2-v3.sh",
+    "parameters": ["--open-in-tab"]
+}
 }
