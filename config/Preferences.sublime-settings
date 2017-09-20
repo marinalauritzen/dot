@@ -85,8 +85,5 @@
 	"theme": "Boxy Tomorrow.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false,
-	"terminal": "iTerm2-v3.sh",
-    "parameters": ["--open-in-tab"]
-}
+	"word_wrap": false
 }

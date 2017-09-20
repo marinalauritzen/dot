@@ -42,18 +42,22 @@ if_nvmrc_nvm_use
 # cd-hook
 cd() {
     # pre
-    builtin cd "$1"
+    if [ -z "$1" ]; then
+        builtin cd
+    else
+        builtin cd "$1"
+    fi
     # post
     if_nvmrc_nvm_use
 }
 
 # rbenv setup
-# eval "$(rbenv init - zsh)"
-
+eval "$(rbenv init - zsh)"
+export PATH=".bundle/binstubs:$PATH"
 
 # watches directories
-taildir () { watch "ls -lrt ${1} | tail -10" }
-export taildir
+watchdir () { watch "ls -lrt ${1} | tail -10" $1 }
+export watchdir
 
 # useful gif conversion
 function gif() {
@@ -61,7 +65,7 @@ function gif() {
 }
 
 # useful http server
-function serve() {
+function http() {
     python -m SimpleHTTPServer $1
 }
 
