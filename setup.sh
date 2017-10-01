@@ -46,11 +46,11 @@ else
   echo "⚠️  $HOME/.gnupg/gpg-agent.conf already exists" >&2
 fi
 
-if [ ! -e "$HOME/config/karabiner/karabiner.json" ]
+if [ ! -e "$HOME/.config/karabiner/karabiner.json" ]
 then
-  ln -s $PWD/config/karabiner.json $HOME/config/karabiner/karabiner.json
+  ln -s $PWD/config/karabiner.json $HOME/.config/karabiner/karabiner.json
 else
-  echo "⚠️  $HOME/config/karabiner/karabiner.json already exists" >&2
+  echo "⚠️  $HOME/.config/karabiner/karabiner.json already exists" >&2
 fi
 
 if [ ! -e "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings" ]
