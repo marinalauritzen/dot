@@ -38,7 +38,7 @@
 	"caret_extra_width": 0,
 	"caret_style": "solid",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Sublime Snazzy (SL).tmTheme",
+	"color_scheme": "Packages/User/Themes/Sublime Snazzy.tmTheme",
 	"copy_with_empty_selection": true,
 	"drag_text": false,
 	"draw_minimap_border": false,
