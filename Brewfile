@@ -6,6 +6,7 @@ tap "homebrew/dupes"
 tap "homebrew/services"
 tap "homebrew/versions"
 
+brew "reattach-to-user-namespace"
 brew "ack"
 brew "adns"
 brew "autoconf"
