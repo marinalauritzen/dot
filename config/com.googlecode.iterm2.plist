@@ -1325,6 +1325,8 @@
 	<real>0.1551832932692308</real>
 	<key>TabStyle</key>
 	<integer>1</integer>
+	<key>UseLionStyleFullscreen</key>
+	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
