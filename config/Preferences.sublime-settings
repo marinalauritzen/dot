@@ -62,10 +62,11 @@
 	[
 		"no_round"
 	],
-	"font_size": 12,
+	"font_size": 11,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Markdown",
 		"Vintage"
 	],
 	"match_brackets_content": true,
