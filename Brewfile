@@ -111,6 +111,7 @@ brew "go"
 # brew "xz"
 # brew "zlib"
 
+cask "ableton-live"
 cask "docker"
 cask "firefox"
 cask "iterm2"
