@@ -5,6 +5,7 @@ tap "homebrew/core"
 tap "homebrew/dupes"
 tap "homebrew/services"
 tap "homebrew/versions"
+tap "gocardless/taps"
 
 brew "reattach-to-user-namespace"
 brew "ack"
@@ -58,6 +59,7 @@ brew "x264"
 brew "xvid"
 brew "yarn"
 brew "go"
+brew "draupnir"
 
 # brew "elixir"
 # brew "erlang"
@@ -125,3 +127,4 @@ cask "sublime-text"
 # cask "google-chrome"
 
 mas "Copy'em Paste", id: 876540291
+mas "Clear – Tasks, Reminders & To-Do Lists", id: 504544917

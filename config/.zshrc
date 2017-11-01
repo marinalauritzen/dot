@@ -77,3 +77,6 @@ alias bye="pmset sleepnow"
 
 # bundle exec
 alias bx="bundle exec"
+
+# postgresql@9.4 setup
+export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
