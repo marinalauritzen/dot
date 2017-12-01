@@ -60,6 +60,8 @@ brew "xvid"
 brew "yarn"
 brew "go"
 brew "draupnir"
+brew "awscli"
+brew "terraform"
 
 # brew "elixir"
 # brew "erlang"
@@ -114,6 +116,7 @@ brew "draupnir"
 # brew "zlib"
 
 cask "ableton-live"
+cask "caffeine"
 cask "docker"
 cask "firefox"
 cask "iterm2"
@@ -128,3 +131,5 @@ cask "sublime-text"
 
 mas "Copy'em Paste", id: 876540291
 mas "Clear – Tasks, Reminders & To-Do Lists", id: 504544917
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
