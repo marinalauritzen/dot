@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+puts "${1:value}: #{${1:value}}" # TODO: Remove this line
+]]></content>
+  <tabTrigger>pt</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Adds a puts to the current line</description>
+</snippet>

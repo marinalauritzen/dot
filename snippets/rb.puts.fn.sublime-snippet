@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+puts "#${1:fn}() =======" # TODO: Remove this line
+]]></content>
+  <tabTrigger>ptf</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Adds a puts to the current line</description>
+</snippet>

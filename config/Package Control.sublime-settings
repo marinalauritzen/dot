@@ -1,0 +1,36 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Boxy Theme",
+		"Comments Aware Enter",
+		"Dockerfile Syntax Highlighting",
+		"EditorConfig",
+		"EJS",
+		"Emmet",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"JavaScript & NodeJS Snippets",
+		"LESS",
+		"Markdown Extended",
+		"MarkdownEditing",
+		"NASM x86 Assembly",
+		"Origami",
+		"Package Control",
+		"Pretty JSON",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-eslint",
+		"SublimeLinter-flow",
+		"SublimeLinter-rubocop",
+		"Terraform",
+		"TypeScript",
+		"Wallaby"
+	]
+}

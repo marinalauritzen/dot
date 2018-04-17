@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+binding.pry # TODO: Remove this line
+]]></content>
+  <tabTrigger>bp</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Adds a binding.pry to the current line</description>
+</snippet>

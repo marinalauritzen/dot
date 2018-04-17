@@ -35,10 +35,10 @@
 		"flow-typed/*"
 	],
 	"bold_folder_labels": true,
-	"caret_extra_width": 0,
+	"caret_extra_width": 1,
 	"caret_style": "solid",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Sublime Snazzy (SL).tmTheme",
+	"color_scheme": "Packages/Color Scheme - Wallaby/Sublime Snazzy.tmTheme",
 	"copy_with_empty_selection": true,
 	"drag_text": false,
 	"draw_minimap_border": false,
@@ -62,7 +62,7 @@
 	[
 		"no_round"
 	],
-	"font_size": 11,
+	"font_size": 16,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -73,7 +73,7 @@
 	"match_selection": false,
 	"match_tags": false,
 	"open_files_in_new_window": false,
-	"overlay_scroll_bars": "disabled",
+	"overlay_scroll_bars": "enabled",
 	"preview_on_click": true,
 	"rulers":
 	[
@@ -82,6 +82,7 @@
 	"scroll_past_end": true,
 	"scroll_speed": 5.0,
 	"show_full_path": false,
+	"show_minimap": false,
 	"sidebar_default": true,
 	"theme": "Boxy Tomorrow.sublime-theme",
 	"translate_tabs_to_spaces": true,

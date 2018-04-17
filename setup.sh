@@ -62,6 +62,13 @@ else
   echo "⚠️  $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings already exists" >&2
 fi
 
+if [ ! -e "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Package\ Control.sublime-settings" ]
+then
+  ln -fs $PWD/config/Package\ Control.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
+else
+  echo "⚠️  $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings already exists" >&2
+fi
+
 if [ ! -e "$HOME/Library/Application Support/Sublime Text 3/Packages/User/snippets" ]
 then
   ln -fs $PWD/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets

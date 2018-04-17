@@ -60,6 +60,7 @@ brew "xvid"
 brew "yarn"
 brew "go"
 brew "draupnir"
+brew "qt@5.5"
 brew "awscli"
 brew "terraform"
 
@@ -127,9 +128,11 @@ cask "skype"
 cask "slack"
 cask "spectacle"
 cask "sublime-text"
+cask "visual-studio-code"
 # cask "google-chrome"
 
 mas "Copy'em Paste", id: 876540291
-mas "Clear – Tasks, Reminders & To-Do Lists", id: 504544917
+mas "Xcode", id: 497799835
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
+mas "Todoist", id: 585829637

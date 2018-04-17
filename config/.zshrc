@@ -8,6 +8,10 @@ source $ZSH/oh-my-zsh.sh
 # api keys
 source ~/.personal-keys
 
+# gcloud
+source ~/google-cloud-sdk/path.zsh.inc
+source ~/google-cloud-sdk/completion.zsh.inc
+
 # theme setup
 ZSH_THEME=""
 autoload -U promptinit; promptinit
@@ -29,6 +33,7 @@ nvm() {
   nvm "$@"
 }
 export PATH="node_modules/.bin:$PATH" # make sure local node_modules are used over global ones
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH" # make sure we have qt
 
 # file .nvmrc exists, use the set version
 if_nvmrc_nvm_use() {
@@ -55,6 +60,9 @@ cd() {
 eval "$(rbenv init - zsh)"
 export PATH=".bundle/binstubs:$PATH"
 
+# pyenv setup
+eval "$(pyenv init - zsh)"
+
 # watches directories
 watchdir () { watch "ls -lrt ${1} | tail -10" $1 }
 export watchdir
@@ -80,3 +88,7 @@ alias bx="bundle exec"
 
 # postgresql@9.4 setup
 export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+unsetopt AUTO_CD
