@@ -1,3 +1,5 @@
+alias date='gdate'
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/walter/.oh-my-zsh
 
@@ -32,13 +34,23 @@ nvm() {
   . "$(brew --prefix nvm)/nvm.sh"
   nvm "$@"
 }
+
 export PATH="node_modules/.bin:$PATH" # make sure local node_modules are used over global ones
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH" # make sure we have qt
 
 # file .nvmrc exists, use the set version
 if_nvmrc_nvm_use() {
     if [ -f .nvmrc ]; then
-        nvm use
+        NVMRC=$(cat .nvmrc | sed s/v//)
+        NODE_VERSION=$(node -v | sed s/v//)
+
+        if [[ "$NODE_VERSION" == "$NVMRC" ]]; then
+        else
+            printf "node version mismatch!"
+            printf "nvm use $NVMRC...\n"
+            nvm use $NVMRC
+            printf "done."
+        fi
     fi
 }
 
@@ -88,6 +100,8 @@ alias bx="bundle exec"
 
 # postgresql@9.4 setup
 export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
+
+# jenv setup
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
