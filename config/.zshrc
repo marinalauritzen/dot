@@ -30,10 +30,10 @@ export GPG_TTY=$(tty)
 
 # nvm setup
 export NVM_DIR="$HOME/.nvm"
-nvm() {
-  . "$(brew --prefix nvm)/nvm.sh"
-  nvm "$@"
-}
+# nvm() {
+. "$(brew --prefix nvm)/nvm.sh"
+  # nvm "$@"
+# }
 
 export PATH="node_modules/.bin:$PATH" # make sure local node_modules are used over global ones
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH" # make sure we have qt
@@ -46,9 +46,11 @@ if_nvmrc_nvm_use() {
 
         if [[ "$NODE_VERSION" == "$NVMRC" ]]; then
         else
-            printf "node version mismatch!"
+            printf "⚠️ node version mismatch!\n"
             printf "nvm use $NVMRC...\n"
             nvm use $NVMRC
+            node -v
+            nvm alias default $NVMRC
             printf "done."
         fi
     fi
