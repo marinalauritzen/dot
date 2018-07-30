@@ -14,15 +14,19 @@
 		"EJS",
 		"Emmet",
 		"GitGutter",
+		"GoSublime",
 		"HTML-CSS-JS Prettify",
 		"JavaScript & NodeJS Snippets",
 		"LESS",
 		"Markdown Extended",
 		"MarkdownEditing",
 		"NASM x86 Assembly",
+		"nginx",
+		"On Save",
 		"Origami",
 		"Package Control",
 		"Pretty JSON",
+		"Scheme",
 		"SCSS",
 		"SideBarEnhancements",
 		"SublimeLinter",
@@ -31,7 +35,6 @@
 		"SublimeLinter-flow",
 		"SublimeLinter-rubocop",
 		"Terraform",
-		"TypeScript",
-		"Wallaby"
+		"TypeScript"
 	]
 }

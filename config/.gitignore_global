@@ -2,4 +2,6 @@
 *.sw[nop]
 .env
 .tags
-
+*.sublime-project
+*.sublime-workspace
+.onsave

@@ -34,6 +34,10 @@ export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
   # nvm "$@"
 # }
+#
+
+# goenv
+eval "$(goenv init -)"
 
 export PATH="node_modules/.bin:$PATH" # make sure local node_modules are used over global ones
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH" # make sure we have qt
@@ -97,8 +101,14 @@ alias zshconfig="subl ~/.zshrc"
 # sleep
 alias bye="pmset sleepnow"
 
-# bundle exec
+alias b="bundle"
 alias bx="bundle exec"
+alias bye="pmset sleepnow"
+alias cat="ccat"
+alias dkr="docker"
+alias doc="docker-compose"
+alias k="kubectl"
+alias zshconfig="subl ~/.zshrc"
 
 # postgresql@9.4 setup
 export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
@@ -108,3 +118,7 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 unsetopt AUTO_CD
+
+export GOPATH=~/go
+
+[[ -s /Users/walter/.rsvm/rsvm.sh ]] && . /Users/walter/.rsvm/rsvm.sh # This loads RSVM

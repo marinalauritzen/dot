@@ -365,11 +365,11 @@
 	<key>DisableFullscreenTransparency</key>
 	<true/>
 	<key>EnableProxyIcon</key>
-	<false/>
+	<true/>
 	<key>HideMenuBarInFullscreen</key>
 	<false/>
 	<key>HideScrollbar</key>
-	<false/>
+	<true/>
 	<key>HideTab</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -419,17 +419,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>812 347 445 77 0 0 1680 1028 </string>
+	<string>812 213 445 77 0 0 1680 1028 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
 	<string>530 640 616 174 0 0 1680 1028 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>968 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>148 77 606 469 0 0 1680 1050 </string>
+	<string>313 150 606 469 0 0 2880 1598 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>635 625 918 394 0 0 1680 1028 </string>
+	<string>466 575 918 394 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1028 0 0 1680 1028 </string>
+	<string>1013 674 652 476 0 0 3008 1670 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>418 220 652 476 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
@@ -1212,7 +1212,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Regular 13</string>
+			<string>FiraCode-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2217,15 +2217,19 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-30T13:06:28Z</date>
+	<date>2018-07-16T20:51:50Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>ShowPaneTitles</key>
+	<true/>
+	<key>SmartPlacement</key>
+	<true/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.1551832932692308</real>
+	<real>0.10000000000000001</real>
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyle</key>

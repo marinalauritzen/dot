@@ -40,7 +40,7 @@
 	cp = cherry-pick
 	cpc = cherry-pick --continue
 	cpa = cherry-pick --abort
-	pr = pull --rebase
+	pr = pull --rebase --autostash
 	ch = checkout
 	st = status
 	br = branch
