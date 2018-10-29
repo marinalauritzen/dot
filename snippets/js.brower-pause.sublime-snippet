@@ -1,6 +1,0 @@
-<snippet>
-  <content><![CDATA[browser.pause(); /* FIXME: Remove comment */]]></content>
-  <tabTrigger>bp</tabTrigger>
-  <scope>source.js</scope>
-  <description>Browser pause for protractor</description>
-</snippet>

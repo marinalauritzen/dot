@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-console.groupCollapsed(`${1:val}`);console.trace();console.groupEnd(); /* TODO: Remove this comment */
-]]></content>
-  <tabTrigger>ctr</tabTrigger>
-  <scope>source.js</scope>
-  <description>Logs collapsed stack trace</description>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-debugger; /* FIXME: remove this statement */
-]]></content>
-  <tabTrigger>deb</tabTrigger>
-  <scope>source.js</scope>
-  <description>Logs a given value as 'debug'.</description>
-</snippet>
